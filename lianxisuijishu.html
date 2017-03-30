@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input class="txt" type="text">
+	<button class="btn">猜数字</button>
+	<script>
+		var txt = document.querySelector('.txt');
+		var btn = document.querySelector('.btn');
+		var result =Math.floor(Math.random()*50+1);
+
+	   btn.onclick = function(){
+	   	var inp =Number(txt.value);
+	   	if(inp>result){
+	   		alert("你是咸鱼")
+	   	}else if(inp===result){
+	   		alert("恭喜答对")querySelectorq
+	   	}else if(inp<result){
+	   		alert("你是咸鱼")
+	   	}
+		}
+		
+	</script>
+</body>
+</html>

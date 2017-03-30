@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button class="btn1">-</button>
+	<span class="spn">0</span>
+	<button class="btn2">+</button>
+	<script>
+		var spn = document.querySelector('.spn')
+		var btn1 = document.querySelector('.btn1')
+		var btn2 = document.querySelector('.btn2')
+		var number=0;
+		btn1.onclick = function(){ 
+			if(number>0){
+			number--
+			spn.innerHTML=number;
+		}
+	}
+		btn2.onclick = function(){
+			number++
+			spn.innerHTML=number;	
+		}
+	</script>
+</body>
+</html>
